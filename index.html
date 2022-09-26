@@ -10,26 +10,41 @@
 <body>
     <main class="container">
     <h1>Cash Register</h1>
+    <br>
+    <br>
     <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+    <br>
     <label for="bill-amount">Bill Amount</label>
     <input class="input" type="number" id="bill-amount">
+    <br>
+    <br>
     <label for="cash-given">Cash Given</label>
     <input class="input" type="number" id="cash-given">
+    <br>
+    <br><br>
     <button id="check-button">Check</button>
     <p id="error-message"></p>
-    <table>
+    <br>
+    <br>
+    <br>
+    <label class="change-table-caption" for="change-table">Return Change</label>
+    <br><br>
+    <table class="change-table">
         <tr>
-            <th>No. of Notes</th>
-            <td class="column"></td>
-            <td class="column"></td>
-            <td class="column"></td>
-            <td class="column"></td>
-            <td class="column"></td>
-            <td class="column"></td>
+            <th id =>No. of Notes</th>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
         </tr>
 
         <tr>
             <th>Notes</th>
+            <td>2000</td>
             <td>500</td>
             <td>200</td>
             <td>100</td>
@@ -42,9 +57,8 @@
     </table>
 
 
-
     </main>
     
 </body>
-<script src="./index.js"></script>
+<script src="/index.js"></script>
 </html>
