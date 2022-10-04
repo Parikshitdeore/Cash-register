@@ -5,7 +5,8 @@ var message = document.querySelector("#error-message")
 var noOfNotesInTable = document.querySelectorAll(".no-of-notes")
 var notesAvailable=[2000,500,200,100,50,10,5,1];
 
-checkButton.addEventListener("click", function validateBillAndCash(){
+checkButton.addEventListener("click", validateBillAndCash)
+function validateBillAndCash(){
 hideMessage()
 if(billAmount.value > 0){
     if(cashGiven.value > billAmount.value){
@@ -18,7 +19,7 @@ calculateNotes(changeToReturn)
 else{
     showMessage("⚠️ Invalid bill Amount")
 }
-})
+}
 function calculateNotes(changeToReturn){
     for (let i = 0; i < notesAvailable.length; i++) {
         var noOfNotes = changeToReturn/notesAvailable[i];
